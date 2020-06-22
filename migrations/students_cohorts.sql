@@ -15,3 +15,5 @@ CREATE TABLE students (
   end_date DATE,
   cohort_id INTEGER REFERENCES cohorts(id) ON DELETE CASCADE
 );
+
+-- SELECT id, name, email, cohort_id FROM students WHERE github = '' ORDER BY cohort_id
